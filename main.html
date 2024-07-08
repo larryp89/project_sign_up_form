@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="image-section">
-            <div class="logo">
-                <img src="odin-lined.png" alt="Odin Logo">
-                <h1>ODIN</h1>
-            </div>
+      <div class="image-side">
+        <div class="banner">
+          <img src="odin-lined.png" alt="" class="logo" />
+          <h1 class="logo-text">Odin</h1>
         </div>
-        <div class="form-section">
-            <div class="form-content">
-                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
-                <p>You know you want to.</p>
-                <h3>Let's do this!</h3>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" value="Thor">
-                        </div>
-                        <div class="form-group">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" value="Odinson">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-                        <div class="form-group">
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
-                        </div>
-                    </div>
-                    <p class="error-message">*Passwords do not match</p>
-                    <button type="submit">Create Account</button>
-                </form>
-                <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+
+      <div class="form-side">
+        <div class="form-wrapper">
+          <div class="form-content">
+            <h2>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up <em>now</em> to get started.
+            </h2>
+            <p>You <em>know</em> you want to.</p>
+            <h3>Let's do this!</h3>
+          </div>
+          <form action="">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  value="Thor"
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  value="Odinson"
+                />
+              </div>
             </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit">Create Account</button>
+          </form>
+          <p>Already have an account? <a href="#">Log in</a></p>
         </div>
+      </div>
     </div>
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>
